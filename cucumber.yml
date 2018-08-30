@@ -1,0 +1,17 @@
+##YAML Template
+---
+default: -p html_report -p allure -p chrome -p dev -p pretty
+
+pretty: --format pretty
+#progress: --format progress
+allure: --format AllureCucumber::Formatter --out=test_report
+html_report: --format html --out=relatório_funcionalidades.html
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome  
+chrome_headless: BROWSER=chrome_headless
+poltergeist: BROWSER=poltergeist
+internet_explorer: BROWSER=internet_explorer
+safari: BROWSER=safari
+
+dev: ENVIRONMENT_TYPE=dev
+hmg: ENVIRONMENT_TYPE=hmg
